@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Mochiy+Pop+One&family=Pacifico&display=swap');
+
+body {
+  width: 100vw;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  overflow-x: hidden;
+}
+.header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(2, 2, 2);
+}
+.search-box {
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+.input_search {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  font-size: 14px;
+  transition: .2s;
+}
+.search-box:hover > .input_search {
+  width: 240px;
+}
+.titulo {
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  margin-left: 15px;
+  font-family: 'Pacifico', cursive;
+  color: white;
+}
+.sub_header {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.links_header {
+  background: rgb(2, 2, 2);
+  width: 100%;
+  height: 30px;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.links {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color:#58ae91;
+  font-weight: bold;
+}
+.links:hover {
+  border: 1px solid #58ae91;
+  border-radius: 25px;
+  padding: 0
+   5px;
+}
+/* BACKGROUNDS */
+.todos-bg {
+  background: url('assets/images/background.jpeg') center no-repeat;
+}
+.cachorros-bg {
+  background: url('assets/images/dog-bg.jpeg') center no-repeat;
+}
+.background{
+  width: 100%;
+  height: 410px;
+}
+.teste {
+  width: 100%;
+  height: 410px;
+  background-color: rgba(0, 0, 0, 0.355);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sub_titulo{
+  font-size: 1.5rem;
+  margin-top: 60px;
+  color: white;
+  font-family: 'Mochiy Pop One', sans-serif;
+}
+.section_conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: auto;
+  margin: 15px 0;
+}
+.linha {
+  width: 100%;
+  background: rgb(115, 110, 110);
+  height: 1.5px;
+}
+.animal_title {
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  font-size: 1.9rem;
+  margin:5px 0;
+}
+.container {
+  width: 100%;
+  margin:0;
+  padding:0;
+  display: flex;
+  flex-direction: row;
+}
+.conteudo {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin:0;
+  padding:0;
+  display: flex;
+  flex-direction: column;
+}
+.titles {
+  margin: 10px 0;
+  font-size: 1.3rem;
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.descricao {
+  width: 200px;
+  margin: 0;
+  font-size: .9rem;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.imagens {
+  width: 180px;
+  height: 120px;
+}
+.imagens:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+

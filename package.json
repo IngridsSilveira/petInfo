@@ -8,5 +8,6 @@
   },
   "author": "Ingrid Souza",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "Access-Control-Allow-Origin": "*"
 }

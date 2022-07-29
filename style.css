@@ -29,6 +29,7 @@ body {
   padding: 0;
   font-size: 14px;
   transition: .2s;
+  color: white;
 }
 .search-box:hover > .input_search {
   width: 240px;
@@ -67,15 +68,11 @@ body {
    5px;
 }
 /* BACKGROUNDS */
-.todos-bg {
-  background: url('assets/images/background.jpeg') center no-repeat;
-}
-.cachorros-bg {
-  background: url('assets/images/dog-bg.jpeg') center no-repeat;
-}
 .background{
   width: 100%;
   height: 410px;
+  background: url('assets/images/background.jpeg') center no-repeat;
+  background-size: contain;
 }
 .teste {
   width: 100%;
@@ -100,11 +97,6 @@ body {
   height: auto;
   margin: 15px 0;
 }
-.linha {
-  width: 100%;
-  background: rgb(115, 110, 110);
-  height: 1.5px;
-}
 .animal_title {
   font-family: 'Edu VIC WA NT Beginner', cursive;
   font-size: 1.9rem;
@@ -115,6 +107,7 @@ body {
   margin:0;
   padding:0;
   display: flex;
+  justify-content: center;
   flex-direction: row;
 }
 .conteudo {
@@ -147,4 +140,22 @@ body {
   transform: scale(1.1);
   cursor: pointer;
 }
-
+.rodape {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.rodape-texto {
+  color: black;
+  font-weight: 550;
+}
+.rodape-texto a {
+  text-decoration: none;
+  color: black;
+}
+.rodape-texto a:hover {
+  text-decoration: underline;
+  color: gold;
+  font-size: 1.5rem;
+}

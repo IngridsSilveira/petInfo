@@ -159,3 +159,48 @@ body {
   color: gold;
   font-size: 1.5rem;
 }
+
+/* MEDIA QUERY */
+@media screen and (min-width: 0) {
+  .links_header {
+    flex-direction: column;
+    height: auto;
+  }
+  .background,
+  .teste{
+    width: 100%;
+  }
+  .sub_header,
+  section,
+  footer {
+    width: auto;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .rodape-texto,
+  .rodape-texto a {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .links_header {
+    flex-direction: row;
+    height: 30px;
+  }
+  .background,
+  .teste{
+    width: 100%;
+  }
+  .sub_header{
+    width: 100vw;
+  }
+  .container {
+    flex-direction: row;
+  }
+  .rodape-texto,
+  .rodape-texto a {
+    font-size: 1rem;
+  }
+}

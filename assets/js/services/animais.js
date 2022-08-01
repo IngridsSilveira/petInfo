@@ -2,7 +2,6 @@ const cachorrosURL = "http://localhost:3000/cachorros";
 const gatosURL = "http://localhost:3000/gatos";
 const coelhosURL = "http://localhost:3000/coelhos";
 
-
 const listaAnimais = () => fetch(cachorrosURL, {
     method: "GET",
     headers: {

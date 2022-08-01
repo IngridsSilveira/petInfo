@@ -1,25 +1,24 @@
-const listaAnimais = () => fetch("http://localhost:3000/cachorros", {
+const cachorrosURL = "http://localhost:3000/cachorros";
+const gatosURL = "http://localhost:3000/gatos";
+const coelhosURL = "http://localhost:3000/coelhos";
+
+
+const listaAnimais = () => fetch(cachorrosURL, {
     method: "GET",
-    mode: 'cors',
-    cache: 'default',
     headers: {
         "Content-Type": "application/json"
     }
 }).then(resposta => resposta.json());
 
-const listaGatos = () => fetch("http://localhost:3000/gatos", {
+const listaGatos = () => fetch(gatosURL, {
     method: "GET",
-    mode: 'cors',
-    cache: 'default',
     headers: {
         "Content-Type": "application/json"
     }
 }).then(resposta => resposta.json());
 
-const listaCoelhos = () => fetch("http://localhost:3000/coelhos", {
+const listaCoelhos = () => fetch(coelhosURL, {
     method: "GET",
-    mode: 'cors',
-    cache: 'default',
     headers: {
         "Content-Type": "application/json"
     }

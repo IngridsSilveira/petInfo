@@ -1,9 +1,0 @@
-{
-    "cachorros": [
-      {
-        "nome": "Rex",
-        "descricao": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishings.",
-        "id": 1,
-        "image": "https://raw.githubusercontent.com/IngridsSilveira/petInfo/main/assets/images/dog1.jpeg"
-      }
-    ]}

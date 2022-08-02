@@ -21,20 +21,21 @@ const render = async () => {
     try{ 
         const ListaAnimais = await animaisServices.listaAnimais()
 
-        ListaAnimais.forEach(elemento => {
+        Object.keys(ListaAnimais).forEach(elemento => {
             container.appendChild(novoAnimal(elemento.nome, elemento.descricao, elemento.id, elemento.image));
         });
 
 
         const ListaGatos = await animaisServices.listaGatos()
 
-        ListaGatos.forEach(elemento => {
+        Object.keys(ListaGatos).forEach(elemento => {
             container2.appendChild(novoAnimal(elemento.nome, elemento.descricao, elemento.id, elemento.image));
         });
 
         
         const ListaCoelhos = await animaisServices.listaCoelhos()
-        ListaCoelhos.forEach(elemento => {
+
+        Object.keys(ListaCoelhos).forEach(elemento => {
             container3.appendChild(novoAnimal(elemento.nome, elemento.descricao, elemento.id, elemento.image));
         });
     }

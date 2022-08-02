@@ -4,25 +4,28 @@ const coelhosURL = "https://raw.githubusercontent.com/IngridsSilveira/petInfo/ma
 
 const listaAnimais = () => fetch(cachorrosURL, {
     method: "GET",
-    mode: 'cors',
     headers: {
-        "Content-Type": "application/json"
-    }
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "Access-Control-Allow-Origin": "*"
+        }
 }).then(resposta => resposta.json());
 
 const listaGatos = () => fetch(gatosURL, {
     method: "GET",
-    mode: 'cors',
     headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "Access-Control-Allow-Origin": "*"
     }
 }).then(resposta => resposta.json());
 
 const listaCoelhos = () => fetch(coelhosURL, {
     method: "GET",
-    mode: 'cors',
     headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "Access-Control-Allow-Origin": "*"
     }
 }).then(resposta => resposta.json());
 

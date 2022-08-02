@@ -1,9 +1,10 @@
-const cachorrosURL = "http://localhost:3000/cachorros";
-const gatosURL = "http://localhost:3000/gatos";
-const coelhosURL = "http://localhost:3000/coelhos";
+const cachorrosURL = "https://raw.githubusercontent.com/IngridsSilveira/petInfo/main/db.json";
+const gatosURL = "https://raw.githubusercontent.com/IngridsSilveira/petInfo/main/db.json";
+const coelhosURL = "https://raw.githubusercontent.com/IngridsSilveira/petInfo/main/db.json";
 
 const listaAnimais = () => fetch(cachorrosURL, {
     method: "GET",
+    mode: 'cors',
     headers: {
         "Content-Type": "application/json"
     }
@@ -11,6 +12,7 @@ const listaAnimais = () => fetch(cachorrosURL, {
 
 const listaGatos = () => fetch(gatosURL, {
     method: "GET",
+    mode: 'cors',
     headers: {
         "Content-Type": "application/json"
     }
@@ -18,6 +20,7 @@ const listaGatos = () => fetch(gatosURL, {
 
 const listaCoelhos = () => fetch(coelhosURL, {
     method: "GET",
+    mode: 'cors',
     headers: {
         "Content-Type": "application/json"
     }

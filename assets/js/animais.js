@@ -15,7 +15,7 @@ function pegandoCachorros(){
     map(element => {
       return `
         <div class="conteudo">
-          <img src="${element.image}"/>
+          <img class="imagens" src="${element.image}"/>
           <h3 class="titles">${element.nome}</h3>
           <p class="descricao">${element.descricao}</p>
         </div>
@@ -34,7 +34,7 @@ function pegandoGatos(){
     map(element => {
       return `
       <div class="conteudo">
-        <img src="${element.image}"/>
+        <img class="imagens" src="${element.image}"/>
         <h3 class="titles">${element.nome}</h3>
         <p class="descricao">${element.descricao}</p>
       </div>
@@ -53,7 +53,7 @@ function pegandoCoelhos() {
       map(element => {
         return `
         <div class="conteudo">
-            <img src="${element.image}"/>
+            <img class="imagens" src="${element.image}"/>
             <h3 class="titles">${element.nome}</h3>
             <p class="descricao">${element.descricao}</p>
         </div>

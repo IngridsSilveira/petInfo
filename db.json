@@ -33,31 +33,31 @@
   ],
   "gatos": [
     {
-      "nome": "Gatinho",
+      "nome": "Luck",
       "descricao": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishings.",
       "id": 1,
       "image": "https://raw.githubusercontent.com/IngridsSilveira/petInfo/main/assets/images/cats1.jpeg"
     },
     {
-      "nome": "Gatinha",
+      "nome": "Buck",
       "descricao": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishings.",
       "id": 2,
       "image": "https://raw.githubusercontent.com/IngridsSilveira/petInfo/main/assets/images/cats2.jpeg"
     },
     {
-      "nome": "Gatinhona",
+      "nome": "Stonk",
       "descricao": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishings.",
       "id": 3,
       "image": "https://raw.githubusercontent.com/IngridsSilveira/petInfo/main/assets/images/cats3.jpeg"
     },
     {
-      "nome": "Gatinhona",
+      "nome": "John",
       "descricao": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishings.",
       "id": 4,
       "image": "https://raw.githubusercontent.com/IngridsSilveira/petInfo/main/assets/images/cats4.jpeg"
     },
     {
-      "nome": "Gatinhona",
+      "nome": "Ralf",
       "descricao": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishings.",
       "id": 5,
       "image": "https://raw.githubusercontent.com/IngridsSilveira/petInfo/main/assets/images/cats5.jpeg"
@@ -65,19 +65,19 @@
   ],
   "coelhos": [
     {
-      "nome": "Coelhino",
+      "nome": "Sony",
       "descricao": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishings.",
       "id": 1,
       "image": "https://raw.githubusercontent.com/IngridsSilveira/petInfo/main/assets/images/rabbit1.jpeg"
     },
     {
-      "nome": "Coelhinho",
+      "nome": "Snook",
       "descricao": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishings.",
       "id": 2,
       "image": "https://raw.githubusercontent.com/IngridsSilveira/petInfo/main/assets/images/rabbit2.jpeg"
     },
     {
-      "nome": "Coelhu",
+      "nome": "Henry",
       "descricao": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishings.",
       "id": 3,
       "image": "https://raw.githubusercontent.com/IngridsSilveira/petInfo/main/assets/images/rabbit3.jpeg"

@@ -36,8 +36,7 @@ const btn_input = document.querySelector(".search-btn");
        let nGatos = nomeGatos;
        let nCoelhos = nomeCoelhos;
 
-        //TRANSFORMANDO EM UM ARRAY
-        //let array = [...nCach, ...nGatos, ...nCoelhos];
+        console.log(nCach);
 
 
         btn_input.addEventListener("click", function(){

@@ -6,15 +6,6 @@ const container = document.querySelector('[data-container]')
 const container2 = document.querySelector('[data-container2]')
 const container3 = document.querySelector('[data-container3]')
 
-//PEGANDO O INPUT E SEU VALOR
-let input = document.querySelector(".input_search").value
-
-//TRANSFORMANDO TODAS AS LETRAS EM MINUSCULAS
-input = input.toLowerCase();
-
-//PEGANDO O BOTÃO
-const btn_input = document.querySelector(".search-btn");
-
   fetch(cachorrosURL).then(response => {
     return response.json();
   })
@@ -24,11 +15,11 @@ const btn_input = document.querySelector(".search-btn");
       return `
       <div class="conteudo">
         <img class="imagens" src="${element.image}"/>
-        <h3 class="titles">${element.nome}</h3>
+        <h3 class="titles" data-nome>${element.nome}</h3>
         <p class="descricao">${element.descricao}</p>
       </div>
-    `
-    });
+      `
+    })
     container.innerHTML = html;
   })
 
@@ -41,7 +32,7 @@ const btn_input = document.querySelector(".search-btn");
       return `
       <div class="conteudo">
         <img class="imagens" src="${element.image}"/>
-        <h3 class="titles">${element.nome}</h3>
+        <h3 class="titles" data-nome>${element.nome}</h3>
         <p class="descricao">${element.descricao}</p>
       </div>
       `
@@ -58,19 +49,29 @@ const btn_input = document.querySelector(".search-btn");
         return `
         <div class="conteudo">
             <img class="imagens" src="${element.image}"/>
-            <h3 class="titles">${element.nome}</h3>
+            <h3 class="titles" data-nome>${element.nome}</h3>
             <p class="descricao">${element.descricao}</p>
         </div>
       `
       });
       container3.innerHTML = html;
 
-    const nomes = document.querySelectorAll(".titles");
-      btn_input.addEventListener("click", function(){
-        for(i = 0; i < nomes.length; i++){
-              if(nomes[i].innerHTML.includes(input)){
-                nomes[i].style.color = '#ff0000';
-              }
-            }
-        })
-    })
+      const nomes = document.querySelectorAll("[data-nome]");
+
+      const botao = document.querySelector(".search-btn")
+
+      botao.addEventListener("click", function(){
+      let input = document.querySelector('.input_search').value
+      input = input.toLowerCase();
+      
+      for (i = 0; i < nomes.length; i++) { 
+          if (!nomes[i].innerHTML.toLowerCase().includes(input)) {
+              nomes[i].style.backgroundColor = '';
+          }
+          else {
+              nomes[i].style.backgroundColor = '#ccc';
+          }
+      }
+      return
+      })
+  })

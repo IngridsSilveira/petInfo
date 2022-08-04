@@ -23,12 +23,15 @@ body {
   margin-right: 40px;
 }
 .input_search {
-  border: none;
-  background: none;
-  outline: none;
-  padding: 0;
+  border: 1px solid #58ae91;
+  border-radius: 7px;
+  background: rgba(0, 0, 0, 0.325);
+  padding: 6px;
   font-size: 14px;
   transition: .2s;
+  color: white;
+}
+.input_search::placeholder {
   color: white;
 }
 .search-box:hover > .input_search {
